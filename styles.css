@@ -17,7 +17,7 @@ body, html {
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='400' viewBox='0 0 400 400'%3E%3Crect width='400' height='400' fill='%230a192f'/%3E%3Ccircle cx='50' cy='50' r='40' fill='rgba(198, 214, 60, 0.3)'/%3E%3Cpath d='M150 10 A140 140 0 0 1 290 150' fill='rgba(133, 167, 160, 0.3)'/%3E%3Ccircle cx='350' cy='50' r='40' fill='rgba(22, 133, 135, 0.3)'/%3E%3Cpath d='M290 150 A140 140 0 0 1 150 290' fill='rgba(22, 160, 133, 0.3)'/%3E%3Ccircle cx='50' cy='250' r='40' fill='rgba(22, 133, 135, 0.3)'/%3E%3Cpath d='M10 150 A140 140 0 0 1 150 10' fill='rgba(22, 160, 133, 0.3)'/%3E%3Ccircle cx='250' cy='350' r='40' fill='rgba(198, 214, 60, 0.3)'/%3E%3Cpath d='M150 290 A140 140 0 0 1 10 150' fill='rgba(133, 167, 160, 0.3)'/%3E%3C/svg%3E");
     background-repeat: repeat;
     background-size: 400px 400px;
-    font-size: 20px; /* Increased base font size */
+    font-size: 20px; 
 }
 .container {
     max-width: 100%;
@@ -28,13 +28,13 @@ body, html {
     min-height: 100vh;
 }
 h1 {
-    font-size: 2.8em; /* Increased h1 font size */
+    font-size: 2.8em; 
 }
 h2 {
-    font-size: 2.3em; /* Increased h2 font size */
+    font-size: 2.3em; 
 }
 h3 {
-    font-size: 1.8em; /* Increased h3 font size */
+    font-size: 1.8em; 
 }
 h1, h2, h3 {
     margin-bottom: 20px;
@@ -53,7 +53,7 @@ h1, h2, h3 {
 .nav-links a {
     color: #e6f1ff;
     text-decoration: none;
-    font-size: 22px; /* Increased navigation link font size */
+    font-size: 22px; 
     transition: color 0.3s ease, transform 0.3s ease;
     cursor: pointer;
 }
@@ -65,7 +65,7 @@ h1, h2, h3 {
     display: none;
     animation: fadeIn 0.5s ease forwards;
     background-color: rgba(10, 25, 47, 0.7);
-    padding: 50px; /* Increased padding for readability */
+    padding: 50px; 
     border-radius: 10px;
     backdrop-filter: blur(5px);
     margin-bottom: 30px;
@@ -74,7 +74,7 @@ h1, h2, h3 {
     display: block;
 }
 .profile-image {
-    width: 350px; /* Increased profile image size */
+    width: 350px; 
     height: 350px;
     border-radius: 50%;
     overflow: hidden;
@@ -96,7 +96,7 @@ h1, h2, h3 {
 }
 .skill-item, .project-item, .experience-item, .education-item {
     background-color: rgba(27, 45, 78, 0.7);
-    padding: 40px; /* Increased padding for skills/projects */
+    padding: 40px; 
     border-radius: 10px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -106,13 +106,13 @@ h1, h2, h3 {
 }
 .btn {
     display: inline-block;
-    padding: 15px 30px; /* Increased button size */
+    padding: 15px 30px; 
     background-color: #64ffda;
     color: #0a192f;
     text-decoration: none;
     border-radius: 5px;
     transition: background-color 0.3s ease, transform 0.3s ease;
-    font-size: 20px; /* Increased button font size */
+    font-size: 20px; 
 }
 .btn:hover {
     background-color: #4cdbac;
@@ -120,6 +120,6 @@ h1, h2, h3 {
 }
 .highlight {
     color: #64ffda;
-    font-size: 22px; /* Increased highlighted text size */
+    font-size: 22px; 
 }
 

@@ -13,9 +13,8 @@ document.addEventListener('DOMContentLoaded', function() {
             activeLink.classList.add('active');
             activeSection.classList.add('active');
 
-            // Trigger animation by removing and re-adding the class
             activeSection.style.animation = 'none';
-            activeSection.offsetHeight; // Trigger reflow
+            activeSection.offsetHeight; 
             activeSection.style.animation = null;
         }
     }
@@ -27,6 +26,5 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // Initialize with home section active
     setActiveSection('home');
 });
