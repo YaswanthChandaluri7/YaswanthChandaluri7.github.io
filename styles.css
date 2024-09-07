@@ -14,7 +14,7 @@ body, html {
     font-family: Arial, sans-serif;
     background-color: #0a192f;
     color: #e6f1ff;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='400' viewBox='0 0 400 400'%3E%3Crect width='400' height='400' fill='%230a192f'/%3E%3Ccircle cx='50' cy='50' r='40' fill='rgba(198, 214, 60, 0.3)'/%3E%3C/svg%3E");
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='400' viewBox='0 0 400 400'%3E%3Crect width='400' height='400' fill='%230a192f'/%3E%3Ccircle cx='50' cy='50' r='40' fill='rgba(198, 214, 60, 0.3)'/%3E%3Cpath d='M150 10 A140 140 0 0 1 290 150' fill='rgba(133, 167, 160, 0.3)'/%3E%3Ccircle cx='350' cy='50' r='40' fill='rgba(22, 133, 135, 0.3)'/%3E%3Cpath d='M290 150 A140 140 0 0 1 150 290' fill='rgba(22, 160, 133, 0.3)'/%3E%3Ccircle cx='50' cy='250' r='40' fill='rgba(22, 133, 135, 0.3)'/%3E%3Cpath d='M10 150 A140 140 0 0 1 150 10' fill='rgba(22, 160, 133, 0.3)'/%3E%3Ccircle cx='250' cy='350' r='40' fill='rgba(198, 214, 60, 0.3)'/%3E%3Cpath d='M150 290 A140 140 0 0 1 10 150' fill='rgba(133, 167, 160, 0.3)'/%3E%3C/svg%3E");
     background-repeat: repeat;
     background-size: 400px 400px;
     font-size: 18px;
@@ -26,6 +26,15 @@ body, html {
     background-color: rgba(10, 25, 47, 0.9);
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
     min-height: 100vh;
+}
+h1 {
+    font-size: 2.5em;
+}
+h2 {
+    font-size: 2em;
+}
+h3 {
+    font-size: 1.5em;
 }
 h1, h2, h3 {
     margin-bottom: 20px;
@@ -80,6 +89,21 @@ h1, h2, h3 {
     height: 100%;
     object-fit: cover;
 }
+.about-section, .skills-grid, .project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+.skill-item, .project-item, .experience-item, .education-item {
+    background-color: rgba(27, 45, 78, 0.7);
+    padding: 30px;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.skill-item:hover, .project-item:hover, .experience-item:hover, .education-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
 .btn {
     display: inline-block;
     padding: 12px 24px;
@@ -93,4 +117,7 @@ h1, h2, h3 {
 .btn:hover {
     background-color: #4cdbac;
     transform: translateY(-2px);
+}
+.highlight {
+    color: #64ffda;
 }
