@@ -4,131 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Yaswanth Reddy - Portfolio</title>
-    <style>
-        @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(20px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-
-        @keyframes slideIn {
-            from { transform: translateX(-50px); opacity: 0; }
-            to { transform: translateX(0); opacity: 1; }
-        }
-
-        body, html {
-            margin: 0;
-            padding: 0;
-            font-family: Arial, sans-serif;
-            background-color: #0a192f;
-            color: #e6f1ff;
-            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='400' viewBox='0 0 400 400'%3E%3Crect width='400' height='400' fill='%230a192f'/%3E%3Ccircle cx='50' cy='50' r='40' fill='rgba(198, 214, 60, 0.3)'/%3E%3Cpath d='M150 10 A140 140 0 0 1 290 150' fill='rgba(133, 167, 160, 0.3)'/%3E%3Ccircle cx='350' cy='50' r='40' fill='rgba(22, 133, 135, 0.3)'/%3E%3Cpath d='M290 150 A140 140 0 0 1 150 290' fill='rgba(22, 160, 133, 0.3)'/%3E%3Ccircle cx='50' cy='250' r='40' fill='rgba(22, 133, 135, 0.3)'/%3E%3Cpath d='M10 150 A140 140 0 0 1 150 10' fill='rgba(22, 160, 133, 0.3)'/%3E%3Ccircle cx='250' cy='350' r='40' fill='rgba(198, 214, 60, 0.3)'/%3E%3Cpath d='M150 290 A140 140 0 0 1 10 150' fill='rgba(133, 167, 160, 0.3)'/%3E%3C/svg%3E");
-            background-repeat: repeat;
-            background-size: 400px 400px;
-            font-size: 18px;
-        }
-        .container {
-            max-width: 100%;
-            margin: 0 auto;
-            padding: 40px 20px;
-            background-color: rgba(10, 25, 47, 0.9);
-            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-            min-height: 100vh;
-        }
-        h1 {
-            font-size: 2.5em;
-        }
-        h2 {
-            font-size: 2em;
-        }
-        h3 {
-            font-size: 1.5em;
-        }
-        h1, h2, h3 {
-            margin-bottom: 20px;
-            animation: slideIn 0.5s ease forwards;
-        }
-        .nav {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-bottom: 40px;
-        }
-        .nav-links {
-            display: flex;
-            gap: 20px;
-        }
-        .nav-links a {
-            color: #e6f1ff;
-            text-decoration: none;
-            font-size: 20px;
-            transition: color 0.3s ease, transform 0.3s ease;
-            cursor: pointer;
-        }
-        .nav-links a:hover, .nav-links a.active {
-            color: #64ffda;
-            transform: translateY(-2px);
-        }
-        .content-section {
-            display: none;
-            animation: fadeIn 0.5s ease forwards;
-            background-color: rgba(10, 25, 47, 0.7);
-            padding: 40px;
-            border-radius: 10px;
-            backdrop-filter: blur(5px);
-            margin-bottom: 30px;
-        }
-        .content-section.active {
-            display: block;
-        }
-        .profile-image {
-            width: 300px;
-            height: 300px;
-            border-radius: 50%;
-            overflow: hidden;
-            margin: 0 auto 30px;
-            transition: transform 0.3s ease;
-        }
-        .profile-image:hover {
-            transform: scale(1.05);
-        }
-        .profile-image img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-        .about-section, .skills-grid, .project-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 30px;
-        }
-        .skill-item, .project-item, .experience-item, .education-item {
-            background-color: rgba(27, 45, 78, 0.7);
-            padding: 30px;
-            border-radius: 10px;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-        .skill-item:hover, .project-item:hover, .experience-item:hover, .education-item:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-        }
-        .btn {
-            display: inline-block;
-            padding: 12px 24px;
-            background-color: #64ffda;
-            color: #0a192f;
-            text-decoration: none;
-            border-radius: 5px;
-            transition: background-color 0.3s ease, transform 0.3s ease;
-            font-size: 18px;
-        }
-        .btn:hover {
-            background-color: #4cdbac;
-            transform: translateY(-2px);
-        }
-        .highlight {
-            color: #64ffda;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="container">
@@ -159,11 +35,9 @@
             <div class="about-section">
                 <div>
                     <p>M.Tech student in Computer Science and Engineering with a strong foundation in machine learning and cybersecurity. I have 1 year of experience in the field of Identity Access Management and Cyber Security.</p>
-                    <p>I started my journey in computer science when I entered university, deepening my knowledge to levels I never imagined! Based on feedback from peers and mentors, I consider myself proactive, dedicated, hardworking, responsible, and passionate about learning everything in the IT field.</p>
                 </div>
                 <div>
-                    <p>Currently pursuing my M.Tech at the International Institute of Information Technology, Hyderabad. I've been recognized for my academic achievements, including a high percentile in GATE 2024 and a top rank in PGEE 2024.</p>
-                    <p>My technical expertise includes developing predictive models using machine learning techniques, with a particular focus on healthcare applications such as Chronic Kidney Disease detection.</p>
+                    <p>Currently pursuing my M.Tech at IIIT, Hyderabad. I have been recognized for my academic achievements, including a high percentile in GATE 2024 and a top rank in PGEE 2024.</p>
                 </div>
             </div>
         </div>
@@ -172,12 +46,12 @@
             <h2>Education</h2>
             <div class="education-item">
                 <h3>M.Tech in Computer Science and Engineering</h3>
-                <p>International Institute of Information Technology, Hyderabad</p>
+                <p>IIIT, Hyderabad</p>
                 <p>July 2024 - May 2026</p>
             </div>
             <div class="education-item">
                 <h3>B.Tech in Computer Science and Engineering</h3>
-                <p>Sree Vidyanikethan Engineering College, Tirupati</p>
+                <p>Sree Vidyanikethan Engineering College</p>
                 <p>August 2019 - May 2023</p>
                 <p>CGPA: 8.19</p>
             </div>
@@ -187,19 +61,9 @@
             <h2>Experience</h2>
             <div class="experience-item">
                 <h3>Programme Analyst Trainee - Cognizant</h3>
-                <p>September 2023 - June 2024, Bangalore, India</p>
+                <p>September 2023 - June 2024, Bangalore</p>
                 <ul>
-                    <li>Worked in Identity Access Management domain in Cyber security.</li>
-                    <li>Resolved user login issues and managed access using production tools.</li>
-                    <li>Handled Truu authenticator issues and managed virtual desktop access for clients.</li>
-                </ul>
-            </div>
-            <div class="experience-item">
-                <h3>Internship</h3>
-                <p>May 2023 - August 2023, Bangalore, Karnataka</p>
-                <ul>
-                    <li>Worked on an integrated threat management system to enhance cybersecurity.</li>
-                    <li>Gained knowledge in Endpoint Security, Network Security, Email Security, and Cloud Security.</li>
+                    <li>Worked in the IAM domain in Cybersecurity.</li>
                 </ul>
             </div>
         </div>
@@ -209,13 +73,7 @@
             <div class="project-grid">
                 <div class="project-item">
                     <h3>Chronic Kidney Disease Prediction</h3>
-                    <p>Developed a predictive model to detect Chronic Kidney Disease (CKD) at an early stage using machine learning techniques. Achieved 92% accuracy using Random Forest algorithm.</p>
-                    <p>Technologies used: Python, Pandas, Scikit-learn, Matplotlib, Seaborn</p>
-                </div>
-                <div class="project-item">
-                    <h3>Virtual Data Center for Students</h3>
-                    <p>Created a virtual database center to provide students with easy access to academic resources, enabling efficient information retrieval and collaboration.</p>
-                    <p>Technologies used: HTML, CSS, JavaScript, React.js, MongoDB</p>
+                    <p>Developed a predictive model to detect CKD using machine learning.</p>
                 </div>
             </div>
         </div>
@@ -227,71 +85,20 @@
                     <h3>Programming Languages</h3>
                     <p>Java, Python, C, C++, JavaScript, SQL</p>
                 </div>
-                <div class="skill-item">
-                    <h3>Web Technologies</h3>
-                    <p>HTML, CSS, React.js, Node.js</p>
-                </div>
-                <div class="skill-item">
-                    <h3>Machine Learning</h3>
-                    <p>Scikit-learn, TensorFlow, Pandas, NumPy</p>
-                </div>
-                <div class="skill-item">
-                    <h3>Cybersecurity</h3>
-                    <p>Identity Access Management, Network Security</p>
-                </div>
             </div>
         </div>
 
         <div id="resume" class="content-section">
             <h2>Resume</h2>
-            <p>Download my full resume to learn more about my qualifications and experiences.</p>
             <a href="https://drive.google.com/file/d/16OicdJURGEOqLQ8lB_9l7miNGN9ezfRC/view?usp=drive_link" target="_blank" class="btn">Download Resume (PDF)</a>
         </div>
 
         <div id="contact" class="content-section">
             <h2>Contact</h2>
             <p>Email: <a href="mailto:yaswanthchandaluri@gmail.com" class="highlight">yaswanthchandaluri@gmail.com</a></p>
-            <p>Phone: +91-9666696501</p>
-            <p>LinkedIn: <a href="https://linkedin.com/in/chandaluri-yaswanth-reddy-510a31214" class="btn">Yaswanth Reddy</a></p>
-            <p>GitHub: <a href="#" class="btn">GitHub Profile</a></p>
-            <p>Leetcode:<a href="https://leetcode.com/u/Yaswanthc/" class="btn">Yaswanth C</a></p>
-            <p>Instagram:<a href="https://www.instagram.com/yaswanth_chandaluri/" class="btn">yaswanth_chandaluri</a></p> 
         </div>
     </div>
 
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const navLinks = document.querySelectorAll('.nav-links a');
-            const contentSections = document.querySelectorAll('.content-section');
-
-            function setActiveSection(sectionId) {
-                navLinks.forEach(l => l.classList.remove('active'));
-                contentSections.forEach(section => section.classList.remove('active'));
-
-                const activeLink = document.querySelector(`.nav-links a[data-section="${sectionId}"]`);
-                const activeSection = document.getElementById(sectionId);
-
-                if (activeLink && activeSection) {
-                    activeLink.classList.add('active');
-                    activeSection.classList.add('active');
-
-                    // Trigger animation by removing and re-adding the class
-                    activeSection.style.animation = 'none';
-                    activeSection.offsetHeight; // Trigger reflow
-                    activeSection.style.animation = null;
-                }
-            }
-
-            navLinks.forEach(link => {
-                link.addEventListener('click', function() {
-                    const sectionId = this.getAttribute('data-section');
-                    setActiveSection(sectionId);
-                });
-            });
-
-            // Initialize with home section active
-            setActiveSection('home');
-        });
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
